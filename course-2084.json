@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "LearningOS/2026a-rustling-ZhenyuYangK",
-  "commit": "7b159c857d69bb5dc49a0d74d0d579749d9c6020",
-  "score": 33,
+  "commit": "4cdab018729e4ff7d5eaa3f211f8e66255d56a70",
+  "score": 34,
   "totalScore": 110,
   "exercises": [
     {
@@ -240,9 +240,9 @@
     {
       "name": "enums1",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "enums2",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "ZhenyuYangK",
-  "runId": "36553297493",
+  "runId": "36553713218",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
