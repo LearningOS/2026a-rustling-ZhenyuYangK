@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "LearningOS/2026a-rustling-ZhenyuYangK",
-  "commit": "cd2b0b2e1fb7f01a62949772e84f8f2dc05e87c4",
-  "score": 65,
+  "commit": "d662baf201d126e27d16b6abbb0d67ccc567b621",
+  "score": 66,
   "totalScore": 110,
   "exercises": [
     {
@@ -464,9 +464,9 @@
     {
       "name": "lifetimes2",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "lifetimes3",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "ZhenyuYangK",
-  "runId": "37470016492",
+  "runId": "37470356069",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
