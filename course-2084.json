@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "LearningOS/2026a-rustling-ZhenyuYangK",
-  "commit": "00d7c89f9dabb57e6b77ab690477a064c0e4466c",
-  "score": 90,
+  "commit": "9b25af28810b9501857ba7488c3cc85ffe8592dd",
+  "score": 91,
   "totalScore": 110,
   "exercises": [
     {
@@ -632,9 +632,9 @@
     {
       "name": "clippy3",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "using_as",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "ZhenyuYangK",
-  "runId": "41065313388",
+  "runId": "41069330076",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
