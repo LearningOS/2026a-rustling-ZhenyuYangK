@@ -2,7 +2,7 @@
 	heap
 	This question requires you to implement a binary heap function
 */
-// I AM NOT DONE
+
 
 use std::cmp::Ord;
 use std::default::Default;
@@ -38,6 +38,14 @@ where
 
     pub fn add(&mut self, value: T) {
         //TODO
+        self.count +=1;
+        self.items.push(value);
+        let mut idx = self.count;
+        while idx > 1 && (self.comparator)(&self.items[idx],&self.items[self.parent_idx(idx)]){
+            let parent = self.parent_idx(idx);
+            self.items.swap(idx,parent);
+            idx = self.parent_idx(idx);
+        }
     }
 
     fn parent_idx(&self, idx: usize) -> usize {
@@ -58,7 +66,15 @@ where
 
     fn smallest_child_idx(&self, idx: usize) -> usize {
         //TODO
-		0
+        let left = self.left_child_idx(idx);
+        let right = self.right_child_idx(idx);
+        if right > self.count {
+            left   // 右孩子不存在，只有左孩子
+        } else if (self.comparator)(&self.items[left], &self.items[right]) {
+            left   // 左孩子更优先
+        } else {
+            right  // 右孩子更优先
+        }
     }
 }
 
@@ -85,7 +101,25 @@ where
 
     fn next(&mut self) -> Option<T> {
         //TODO
-		None
+		if self.count == 0 {
+            return None;
+        }
+        // swap_remove(1)：把堆顶(下标1)和最后一个元素交换后删掉，返回堆顶值
+        let result = self.items.swap_remove(1);
+        self.count -= 1;
+
+        let mut idx = 1;
+        while self.children_present(idx) {                // 还有孩子才可能下沉
+            let child = self.smallest_child_idx(idx);      // 找更优先的孩子
+            if (self.comparator)(&self.items[child], &self.items[idx]) {
+                // 孩子比当前节点更优先 → 交换下沉
+                self.items.swap(idx, child);
+                idx = child;
+            } else {
+                break;                                     // 已就位
+            }
+        }
+        Some(result)
     }
 }
 
