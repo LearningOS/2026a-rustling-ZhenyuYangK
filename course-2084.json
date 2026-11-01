@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "LearningOS/2026a-rustling-ZhenyuYangK",
-  "commit": "7706e33730d725e28076d2c3c28bc97e564e0b67",
-  "score": 104,
+  "commit": "a8bb65834e5746132a667ba41be7ea3626c4b20f",
+  "score": 105,
   "totalScore": 110,
   "exercises": [
     {
@@ -737,9 +737,9 @@
     {
       "name": "algorithm5",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "algorithm6",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "ZhenyuYangK",
-  "runId": "41277417354",
+  "runId": "41278086049",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
